@@ -1,0 +1,239 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/*Page Section, Video*/
+.seccc {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fe0000;
+}
+
+section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/*Header*/
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+header .logo {
+  position: relative;
+  max-width: 150px;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+}
+
+header ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
+}
+
+header ul li a {
+  
+  font-size: 15px;
+  font-weight: 100;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  color: #fff;
+}
+
+/*Content Text*/
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.content .textBox {
+  position: relative;
+  max-width: 700px;
+}
+
+.content .textBox .heading_2 {
+  font-size: 2em;
+  line-height: 1.4em;
+  font-weight: 600;
+  word-spacing: 20px;
+  line-height: 100px;
+}
+
+.content .textBox h2 .spann {
+  text-transform: uppercase;
+  font-size: 2.3em;
+  font-weight: 900;
+}
+
+.content .textBox p {
+  font-size: 15px;
+  word-spacing: 5px;
+  line-height: 25px;
+}
+
+.content .textBox a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 13px 40px;
+  background: #fff;
+
+  color: #000;
+  font-weight: 600;
+  border: 2px solid #fff;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+
+.content .textBox a:hover {
+  background: transparent;
+  color: #fff;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+/* reponsive  */
+
+
+@media screen and (max-width:1080px){
+  
+  .checkbtn{
+    display: block;
+  }
+  
+#check:checked ~ul{
+  left: 0;
+ }
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  .seccc {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 5px;
+    display: flex;
+  align-items: center;
+  }
+  header {
+    background: #dc3545;
+    position: fixed;
+    height: 50px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+header ul {
+  position: fixed;
+  width: 100%;
+  top:50px;
+  height:100vh;
+  background: rgba(0, 0, 0,0.95);
+  left:+100%;
+  text-align: center;
+  transition: all .5s;
+  overflow: hidden;
+  z-index: +10;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+header img .bar{
+  float: right;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li a{
+
+  font-size: 20px;
+}
+
+header ul li  {
+  width: 100%;
+  height: 50px;
+  margin: 15px 0;
+  align-content: center;
+  align-items: center;
+}
+
+header ul li:hover{
+  background: #dc3546ab;
+  color: #fff;
+}
+
+header ul li a:hover,a.active{
+  background: none;
+}
+
+header .logo {
+  max-width: 100px;
+  left: 0;
+}
+
+.content .textBox .heading_2 {
+  font-size: 0.6em;
+  
+}
+.content .textBox h2 .spann {
+  font-size: 1.4em;
+  
+}
+.content .textBox {
+  position: relative;
+  padding: 15px;
+  max-width: 700px;
+}
+
+ }
